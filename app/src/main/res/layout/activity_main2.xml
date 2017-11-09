@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wallpaper"
+    tools:context="com.example.guides.externalstorage.Main2Activity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FileName"
+        android:layout_marginTop="20pt"
+        android:layout_marginLeft="20pt"
+        android:id="@+id/TXT5"
+        android:textSize="10pt"
+        android:textColor="#FFF"/>
+    <EditText
+        android:id="@+id/EDT5"
+        android:layout_width="400px"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/TXT5"
+        android:layout_alignBaseline="@+id/TXT5"
+        android:layout_marginLeft="10pt"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="#FFF"/>
+    <TextView
+        android:layout_marginTop="5pt"
+        android:layout_below="@+id/TXT5"
+        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Your Data will appear here"
+        android:layout_marginLeft="20pt"
+        android:id="@+id/TV"
+
+        android:textSize="10pt"
+        android:background="@color/colorPrimary"/>
+    <Button
+        android:layout_marginTop="10pt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/TV"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/BTNSP2"
+        android:text="Shared Preferences"
+        android:onClick="displayPreferences"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/BTNSP2"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/BTNIS2"
+        android:text="Internal Storage"
+        android:onClick="getInternalStorage"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/BTNIS2"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/BTN6"
+        android:text="Internal Cache"
+        android:onClick="getInternalCache"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/BTN6"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/BTN7"
+        android:text="External Cache"
+        android:onClick="getExternalCache"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/BTN7"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/BTN8"
+        android:text="External Storage"
+        android:onClick="getExternalStorage"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/BTN8"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/BTN9"
+        android:text="External Public Storage"
+        android:onClick="getPublicExternal"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/BTN9"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/BTN10"
+        android:text="Previous"
+        android:onClick="Back"/>
+</RelativeLayout>
